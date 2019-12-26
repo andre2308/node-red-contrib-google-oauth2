@@ -9,7 +9,7 @@ module.exports = function(RED) {
         this.displayName = n.displayName;
         this.scopes = n.scopes;
     }
-    RED.nodes.registerType("google-credentials",GoogleNode,{
+    RED.nodes.registerType("google-credentials2",GoogleNode,{
         credentials: {
             displayName: {type:"text"},
             clientId: {type:"text"},
