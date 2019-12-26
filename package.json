@@ -1,33 +1,69 @@
 {
-  "name": "node-red-contrib-google-oauth2",
-  "version": "0.0.1",
-  "description": "Node-RED node for Google APIs call using OAuth2.",
+  "_args": [
+    [
+      "/home/andre/.node-red/node_modules/node-red-contrib-google-oauth2v2",
+      "/home/andre/.node-red"
+    ]
+  ],
+  "_from": "node_modules/node-red-contrib-google-oauth2v2",
+  "_id": "node-red-contrib-google-oauth2v2@0.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/node-red-contrib-google-oauth2v2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": null,
+    "raw": "/home/andre/.node-red/node_modules/node-red-contrib-google-oauth2v2",
+    "rawSpec": "/home/andre/.node-red/node_modules/node-red-contrib-google-oauth2v2",
+    "scope": null,
+    "spec": "/home/andre/.node-red/node_modules/node-red-contrib-google-oauth2v2",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:node_modules/node-red-contrib-google-oauth2v2",
+  "_shasum": "d9d7476c8bb44e70e3bf8616b76bfb046e34c838",
+  "_shrinkwrap": null,
+  "_spec": "/home/andre/.node-red/node_modules/node-red-contrib-google-oauth2v2",
+  "_where": "/home/andre/.node-red",
+  "author": {
+    "name": "Tom Stanczyk"
+  },
+  "bugs": {
+    "url": "https://github.com/andre2308/node-red-contrib-google-oauth2/issues"
+  },
+  "contributors": [
+    {
+      "name": "André Stark"
+    }
+  ],
   "dependencies": {
     "googleapis": "^36.0.0"
   },
-  "license": "MIT",
+  "description": "Node-RED node for Google APIs call using OAuth2.",
+  "devDependencies": {},
+  "homepage": "https://github.com/andre2308/node-red-contrib-google-oauth2#readme",
   "keywords": [
-    "node-red",
     "google",
     "googleapis",
+    "node-red",
     "oauth2"
   ],
+  "license": "MIT",
+  "name": "node-red-contrib-google-oauth2v2",
   "node-red": {
     "nodes": {
       "google": "./google.js",
       "google-credentials": "./google-auth.js"
     }
   },
-  "author": {
-    "name": "Tom Stanczyk"
-  },
-  "contributors": [
-    {
-      "name": "Patrick Hieber"
-    }
-  ],
+  "optionalDependencies": {},
+  "readme": "# Generic Google API Client for Node-RED using OAuth2\n\nNode-RED node for Google APIs.\n\nThis Node is based on the implementation by [74Labs](https://github.com/74Labs/node-red-contrib-google). It has been updated to use the latest version of the __googleapis__. Further the authorization workflows has been changed to __OAuth2__.\n\n## Features\n\nThis node is a wrapper for official Google APIs Node.js Client: [google-api-nodejs-client](https://github.com/google/google-api-nodejs-client).\n\nList of available APIs are delivered online via [Google API Discovery Service](https://developers.google.com/discovery/).\n\nPackage contains two nodes. There is configuration node made for maintaining connection to Google API Services (_google-credentials_) and regular node providing posibility to call any method of any API exposed via official Google's Node.js Client.\n\n## How to Install\n\nRun the following command in the root directory of your Node-RED install\n\n```\nnpm install node-red-contrib-google-oauth2\n```\n\nor for a global installation\n```\nnpm install -g node-red-contrib-google-oauth2\n```\n\n## Configuration\n\n1. Generate OAuth credentials at [Google API Console](https://console.developers.google.com/apis/credentials/oauthclient).\n\n  * Choose Web Application.\n  * As `Authorized JavaScript origins` enter your Node-RED IP (_e.g. `http://localhost:1880`_)\n  * As `Authorized redirect URIs` enter your Node-RED IP plus `/google-credentials/auth/callback` (_e.g. `http://localhost:1880/google-credentials/auth/callback`_)\n\n2. Copy the `Client ID` and `Client secret` and paste them into the Config Node\n",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andre2308/node-red-contrib-google-oauth2"
-  }
+    "url": "git+https://github.com/andre2308/node-red-contrib-google-oauth2.git"
+  },
+  "version": "0.0.1"
 }

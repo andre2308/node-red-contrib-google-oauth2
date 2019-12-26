@@ -146,6 +146,6 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("google", GoogleNode);
+    RED.nodes.registerType("google2", GoogleNode);
 
 };

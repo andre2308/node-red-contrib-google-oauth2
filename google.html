@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('google', {
+    RED.nodes.registerType('google2', {
         category: 'function',
         color: '#FFCC66',
         icon: 'google.png',
@@ -8,7 +8,7 @@
                 value: ""
             },
             google: {
-                type: "google-credentials",
+                type: "google-credentials2",
                 required: true
             },
             api: {
@@ -21,7 +21,7 @@
         inputs: 1,
         outputs: 1,
         label: function() {
-            return this.name || "google";
+            return this.name || "google2";
         },
         oneditprepare: function oneditprepare() {
 
@@ -68,7 +68,7 @@
     });
 </script>
 
-<script type="text/x-red" data-template-name="google">
+<script type="text/x-red" data-template-name="google2">
     <div class="form-row">
         <label for="node-input-name">
             <i class="icon-tag"></i>
